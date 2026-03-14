@@ -1,0 +1,559 @@
+        * {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .mainpage {
+            /* border: 2px solid black; */
+            height:70vh;
+            /* height: 1000px; */
+            width: 100vw;
+            background-position: center center;
+            position: relative;
+            /* filter: brightness(90%); */
+
+
+
+        }
+
+        .mainpage::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: url("images/bg.jpg");
+            background-size: cover;
+            /* background-size: max(1000px,100vw); */
+            filter: blur(0.5px);
+
+            filter: brightness(30%);
+
+            z-index: -1;
+        }
+
+        .nav {
+            /* position: absolute; */
+            display: flex;
+            justify-content: space-between;
+            /* background-color: antiquewhite; */
+            width: 85vw;
+            height: 100px;
+            /* height: auto; */
+            margin: auto;
+            align-items: center;
+            /* z-index: 10; */
+
+        }
+
+        .logo img {
+
+
+
+            height: 2.5rem;
+
+        }
+
+        .side {
+
+            /* margin-top: 4vh; */
+
+
+
+
+        }
+
+
+        .siin {
+            margin-left: 10px;
+            background-color: red;
+            color: white;
+            font-size: 1rem;
+            font-weight: 500;
+
+            padding: 7px 15px;
+
+            border-radius: 5px;
+            border: none;
+
+        }
+
+
+        .Eng {
+
+            background: none;
+            border: 2px slid white;
+            color: white;
+            font-size: 1rem;
+            font-weight: 500;
+
+            padding: 7px 15px;
+
+            border-radius: 5px;
+            /* color: black; */
+
+        }
+
+        .Eng:hover {
+            color: cadetblue;
+            border: 2px solid white;
+
+
+        }
+
+        .main {
+             position: relative;
+            height: 70vh;
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+                /* margin: -2rem auto 0 auto; */
+
+
+
+            color: white;
+        }
+
+        .header {
+            display: flex;
+
+            flex-direction: column;
+            text-align: center;
+        }
+
+
+
+        .header div {
+            
+            font-size: 4rem;
+            font-weight: 900;
+            text-align: center;
+            
+
+
+        }
+
+        div .membership {
+            font-size: 1.4rem;
+            font-weight: 400;
+            margin: 20px;
+            text-align: center;
+            
+        }
+
+        div.loginfo {
+            font-size: 1rem;
+            font-weight: 350;
+            text-align: center;
+           
+        }
+
+        .login {
+            margin-top: 15px;
+            align-self: center;
+            display: flex;
+            gap: 20px;
+            
+
+        }
+
+        .email {
+            padding: 15px 70px 15px 10px;
+            border: none;
+            border: 1px solid white;
+            border-radius: 5px;
+            font-size: 15px;
+            background: none;
+
+        }
+
+
+        .login button {
+            
+
+            padding: 13px 50px 13px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: red;
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+
+        }
+
+        .login img {
+            height: 22px;
+
+        }
+
+        button:hover {
+            filter: brightness(80%);
+        }
+
+        .joint {
+            background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+            z-index: 1;
+        }
+
+
+        .secondpage {
+            margin-top: 0px;
+
+            background-color: #120e0e;
+            width: 100vw;
+            height: 100vh;
+            border: 1px solid rgb(15, 15, 15);
+        }
+
+        .txt {
+            color: white;
+            display: flex;
+            /* align-items: center; */
+            justify-content: flex-start;
+            margin: 50px 20px 10px 115px;
+
+        }
+
+        .grid1 {
+            margin: 0px 115px;
+            display: flex;
+            /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+            gap: 80px;
+        }
+
+        .box {
+            width: 295px;
+            background-repeat: no-repeat;
+            /* border: none; */
+
+            background-position: center;
+            border-radius: 10px;
+
+            height: 260px;
+            transition: transform 0.3s;
+        }
+
+        .box:hover {
+            transform: scale(1.05)
+        }
+
+        .box-1 {
+            background-image: url("images/1.webp");
+            /* border-radius: 50px; */
+
+        }
+
+        .box-2 {
+            background-image: url("images/2.webp");
+
+        }
+
+        .box-3 {
+            background-image: url("images/3.webp");
+
+        }
+
+        .box-4 {
+            background-image: url("images/4.webp");
+
+        }
+
+        .box-5 {
+            background-image: url("images/5.webp");
+
+        }
+
+        .grid2 {
+            color: aliceblue;
+            display: flex;
+            margin: 0px 115px;
+            /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+            gap: 20px;
+        }
+
+        .item {
+            border: 2px solid white;
+            border-radius: 10px;
+            background-color: chocolate;
+            width: 100%;
+            height: auto;
+            flex: 1;
+            
+            /* margin: 20px 15px; */
+
+        }
+
+        .title {
+            font-size: 23px;
+            margin: 20px 15px;
+            font-weight: 600;
+        }
+
+        .txt2 {
+            margin: 20px 15px;
+            font-size: 16px;
+
+        }
+
+        .logo2 {
+            display: flex;
+
+            justify-content: end;
+            align-items: end;
+        }
+
+        .logo2 img {
+            height: 50px;
+            padding-right: 15px;
+            margin-bottom: 10px;
+
+        }
+
+        .thirdpage {
+            margin-top: 0px;
+
+            background-color: #120e0e;
+            width: 100vw;
+            height: 100vh;
+            border: 1px solid rgb(15, 15, 15);
+            color: white;
+
+        }
+
+        .txt3 {
+
+            display: flex;
+            /* align-items: center; */
+            justify-content: flex-start;
+            margin: 50px 20px 10px 115px;
+        } 
+
+        .grid3 {
+            color: rgb(255, 255, 255);
+            font-weight: 500;
+            display: flex;
+            flex-direction: column;
+            margin: 0px 115px;
+            
+            gap: 10px;
+
+        }
+
+        .que {
+            background-color: #302e2e;
+            font-size: 20px;
+            padding: 25px 20px;
+        }
+
+        .que:hover {
+            filter: brightness(120%);
+        }
+
+
+       
+
+        @media screen and (width<=1600px){
+            .mainpage{
+                height: 900px;
+            }
+            .main{
+                height: 600px;
+            }
+           .siin{
+            font-size: 0.9rem;
+            font-weight: 450;
+           }
+           .Eng{
+            font-size: 0.9rem;
+          
+           
+           }
+           .header div {
+            font-size: 3.5rem;
+           }
+            div .membership {
+                font-size: 1.0rem;
+            }
+            div.loginfo {
+                font-size: 0.9rem;
+            }
+
+
+
+        }
+        @media screen and (width<=1280px){
+              .mainpage{
+                height: 650px;
+            }
+            .main{
+                height: 400px;
+            }
+           .siin{
+            font-size: 0.8rem;
+            font-weight: 400;
+           }
+           .Eng{
+            font-size: 0.8rem;
+           
+            
+           }
+           .header div{
+            font-size: 3rem;
+           }
+            div .membership {
+                font-size: 1.0rem;
+            }
+            div.loginfo {
+                font-size: 0.9rem;
+            }
+            .txt{
+                margin: 50px 20px 10px 95px;
+            }
+            .grid1{
+               
+                /* flex-wrap: wrap; */
+                gap: 40px;
+                margin: 0px 70px;
+
+                
+            }
+            .box-5{
+                display: none;
+               
+            }
+            .grid2{
+                
+                flex-wrap: wrap;
+                margin: 0px 95px;
+                
+            }
+            .item{
+                
+                flex: 0 0 48%;
+            }
+            
+
+
+
+        }
+         @media screen and (width<=960px) {
+             .mainpage{
+                height: 550px;
+            }
+            .main{
+                height: 400px;
+            }
+            .logo img{
+                height: 1.5rem;
+                font-weight: 350;
+            }
+            .siin{
+            font-size: 0.7rem;
+           }
+           .Eng{
+            font-size: 0.7rem;
+            
+           }
+            .header div{
+                font-size: 2.5rem;
+
+            }
+            div .membership {
+                font-size: 0.8rem;
+            }
+            div.loginfo {
+                font-size: 0.7rem;
+            }
+             .box-4{
+                display: none;
+               
+            }
+            .txt{
+                margin: 50px 20px 10px 50px;
+            }
+            .grid1{
+                margin: 0px 50px;
+            }
+            .grid2{
+                
+                flex-wrap: wrap;
+                 margin: 0px 50px;
+                
+            }
+             .grid1{
+                margin: 0px 50px;
+            }
+            .item{
+                flex: 0 0 100%;
+            }
+
+            
+
+
+
+        }
+        @media screen and (width<=600px) {
+            
+            .logo img{
+                height: 1.5rem;
+            }
+            .side{
+                display: block;
+            }
+            .siin{
+            font-size: 0.6rem;
+           }
+           .Eng{
+            font-size: 0.6rem;
+            
+           }
+           .login{
+           flex-direction: column;         
+           }
+           
+            .email{
+           
+             margin:0px 70px ;
+           
+            } 
+            .login button{
+               
+                
+                align-self: center;
+               
+            }
+            .header div{
+                font-size: 2rem;
+
+            }
+            div .membership {
+                font-size: 0.8rem;
+            }
+            div.loginfo {
+                font-size: 0.7rem;
+                font-weight: 200;
+            }
+            .txt{
+                margin: 50px 20px 10px 30px; 
+            }
+            .grid1{
+                margin: 0px 10px;
+
+            }
+            .grid2{
+                margin: 0px 30px;
+            }
+            .grid3{
+                margin: 400px 30px;
+            }
+            .txt3{
+                margin: 400px 30px;
+            }
+            .box-3{
+                display: none;
+               
+            }
+
+        }
+        
